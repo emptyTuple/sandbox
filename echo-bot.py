@@ -33,6 +33,6 @@ if __name__ == "__main__":
     dp.message.register(handle_help, Command("help"))
     dp.message.register(handle_photo, F.photo)
     dp.message.register(handle_sticker, F.sticker)
-    dp.message.register(send_echo, F.text)
+    dp.message.register(send_echo)
     dp.run_polling(bot)
 
