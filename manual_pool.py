@@ -1,8 +1,9 @@
 import requests
 import time
+import os
 
 API_URL = "https://api.telegram.org/bot"
-TOKEN = "7708458048:AAFgnRq2j6P0Eu8SX5TcFhrxNwvC-efuo5E"
+TOKEN = os.getenv("EMPTY_TOKEN")
 TEXT = "some text"
 MAX_COUNTER = 1000
 

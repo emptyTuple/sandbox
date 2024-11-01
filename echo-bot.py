@@ -9,6 +9,7 @@ bot = Bot(token=os.getenv("EMPTY_TOKEN"))
 dp = Dispatcher()
 
 async def handle_start(message: Message):
+    print(message.model_dump_json(indent=2, exclude_none=True))
     await message.answer("Hello, I am echo bot.")
 
 async def handle_help(message: Message):
